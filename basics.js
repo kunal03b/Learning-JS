@@ -69,5 +69,3 @@ console.log(names);
 console.log("Index 0 : " + names[0]);
 console.log("Index 4 : " + names[4]);
 console.log("size of array: " + names.length);
-
-
