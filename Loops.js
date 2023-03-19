@@ -51,9 +51,14 @@ console.log();
 
 
 // -----------Break and Continue --------------------------------
+console.log("Break and Continue".toUpperCase());
 for(var i = 0;i<names.length;i++){
-    console.log(names[i]);
-    if(i ==2){
-        break;
+    if(i <2){
+        continue;
     }
+    console.log(names[i]);
+    // if(i ==2){
+    //     break;
+    // }
 }
+console.log();
