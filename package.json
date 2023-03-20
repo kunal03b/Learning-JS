@@ -1,0 +1,20 @@
+{
+  "name": "learning-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Loops.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal03b/Learning-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunal03b/Learning-JS/issues"
+  },
+  "homepage": "https://github.com/kunal03b/Learning-JS#readme"
+}
