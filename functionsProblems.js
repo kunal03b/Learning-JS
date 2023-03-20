@@ -18,3 +18,12 @@ console.log(myFunc(firstNo, secondNo))
 const getFileExtension = (str) => str.slice(str.lastIndexOf('.'));
 console.log(getFileExtension('index.html'));
 console.log(getFileExtension('webpack.config.js'));
+
+
+// -----------------------------------------------------------------------------------
+// WAP to create a new string from a given string the first 3 character and the last 3 characters of a string and adding them together. The string length should be greater than 3, if not then return the original string.
+const makeString = (str) =>
+    str.length<3 ? str : str.slice(0,3) + str.slice(-3);
+
+console.log(makeString('ABC'));
+console.log(makeString('ABCDEFGH'));
