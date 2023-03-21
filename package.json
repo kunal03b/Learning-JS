@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kunal03b/Learning-JS/issues"
   },
-  "homepage": "https://github.com/kunal03b/Learning-JS#readme"
+  "homepage": "https://github.com/kunal03b/Learning-JS#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }

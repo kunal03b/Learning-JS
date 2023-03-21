@@ -40,3 +40,14 @@ function ExtractHalf(str){
     }
 }
 console.log(ExtractHalf("ABCD"));
+
+// ------------------------------------------------------------------------------------
+// Given two number values, wap to find the number which is closer to 100.
+function closerTo100(num1,num2){
+    if(100-num1 < 100-num2){
+        return num1+" is closer to 100";
+    }else{
+        return num2+" is closer to 100";
+    }
+}
+console.log(closerTo100(10,20));
