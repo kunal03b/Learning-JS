@@ -27,3 +27,16 @@ const makeString = (str) =>
 
 console.log(makeString('ABC'));
 console.log(makeString('ABCDEFGH'));
+console.log(makeString('Ab'));
+
+// ------------------------------------------------------------------------------------
+// WAP to extract the first half of a string of even length.
+function ExtractHalf(str){
+    if(str.length%2 ===0){
+        return str.slice(0,str.length/2);
+    }
+    else{
+        return "String cannot be split as it is of odd length";
+    }
+}
+console.log(ExtractHalf("ABCD"));
