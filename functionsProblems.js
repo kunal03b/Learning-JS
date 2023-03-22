@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 // write a javascript program to check two numbers and return true if one of the number is 100 or if the sum of the two number is 100.
 
 var firstNo = 20
@@ -51,3 +53,17 @@ function closerTo100(num1,num2){
     }
 }
 console.log(closerTo100(10,20));
+
+// --------------------------------------------------------------------------------------
+// Fabonici series upto n terms
+const number = parseInt(prompt('Enter the total number of terms: '));
+let number1 = 0, number2 = 1, nextTerm;
+
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    console.log(number1);
+    nextTerm = number1 + number2;
+    number1 = number2;
+    number2 = nextTerm;
+}
