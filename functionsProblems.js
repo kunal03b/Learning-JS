@@ -67,3 +67,17 @@ for (let i = 1; i <= number; i++) {
     number1 = number2;
     number2 = nextTerm;
 }
+
+
+// ---------------------------------------------------------------------------------------
+// TO find the factors of an integer
+const num = prompt('Enter a number: ');
+
+console.log(`The factors of ${num} is:`);
+
+for(let i = 1; i <= num; i++) {
+
+    if(num % i == 0) {
+        console.log(i);
+    }
+}
