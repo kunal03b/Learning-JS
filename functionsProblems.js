@@ -2,8 +2,8 @@ const prompt = require("prompt-sync")();
 
 // write a javascript program to check two numbers and return true if one of the number is 100 or if the sum of the two number is 100.
 
-var firstNo = 20
-var secondNo = 100
+var firstNo = prompt("Enter 1st number");
+var secondNo = prompt("Enter 2nd number");
 
 const myFunc = function(a, b) {
     if(a ==100 || b == 100 || a + b ==100 ){
