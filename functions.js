@@ -1,13 +1,15 @@
 // functions
+const prompt = require("prompt-sync")();
 
 function func(num1, num2){
     addition = num1 + num2;
     return addition;
 }
-var result1  = func(20,10)
-var result2 = func(70,10)
+num1 = parseInt(prompt("ENter 1st number"));
+num2 = parseInt(prompt("ENter 2nd number"));
+var result1  = func(num1,num2)
 
-console.log(result1, result2)
+console.log(result1)
 
 var person = {
     name : "Kunal"
