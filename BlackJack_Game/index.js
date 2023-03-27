@@ -1,13 +1,16 @@
-var firstCard = 11
-var secondCard = prompt("Enter the 2nd card number");
-let sum = firstCard + secondCard;
+var firstCard = prompt("Enter 1st card number: ")
+var secondCard = prompt("Enter 2nd card number: ")
+
+let sum = parseInt(firstCard) + parseInt(secondCard)
 let hasBlackJack = false
 let isAlive = true
 let message = " "
 let messageEl = document.getElementById("message-el")
-console.log(messageEl)
+// let sumEl = document.getElementById("sum-el")
+let sumEl = document.querySelector("#sum-el")
 
 function startGame(){
+    sumEl.textContent = "Sum: " + sum
     if(sum < 21){
         message = "Do you want to draw a new card?"
         // hasBlackJack = false;
