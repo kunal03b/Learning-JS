@@ -40,4 +40,5 @@ function newCard(){
     let card = parseInt(prompt("Enter the new Card Number"))
     sum += card
     startGame()
+    console.log(newCard)
 }
