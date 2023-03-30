@@ -1,6 +1,6 @@
 var firstCard = prompt("Enter 1st card number: ")
 var secondCard = prompt("Enter 2nd card number: ")
-
+let cards = [firstCard, secondCard]
 let sum = parseInt(firstCard) + parseInt(secondCard)
 let hasBlackJack = false
 let isAlive = true
