@@ -37,3 +37,28 @@ const arrayFunc = function(array,target){
 
 myarray = [1,2,3,4,5];
 console.log(arrayFunc(myarray,1));
+console.log()
+
+// ----------------------------------------------------------------------------
+// arrow functions
+const isEven = (number) => {
+    return number%2 ===0;
+}
+takeNumber = prompt("Enter number to check: ")
+console.log(isEven(takeNumber)); 
+
+// ---------------------------------------------------------------------
+// function inside function
+const func1 = () => {
+    console.log("Coming from func1");
+    const func12 = () => {
+        console.log("Coming from function 12");
+        const func121 = () => {
+            console.log("Coming from func121");
+            // func121()
+        }
+        func121()
+    }
+    func12();
+}
+func1()
