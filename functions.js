@@ -18,3 +18,22 @@ console.log(Object.values(person));
 console.log(Object.keys(person));
 
 console.log("Sharma".toUpperCase());
+
+// -----------------------------------------------------------------------------
+// function expression
+const myfunc = function(num1, num2){
+    return num1 + num2;
+}
+console.log(myfunc);
+
+const arrayFunc = function(array,target){
+    for(let i=0; i<array.length; i++){
+        if(array[i] === target){
+            return "Element found in the array on index: " + i;
+        }
+    }
+    return -1;
+}
+
+myarray = [1,2,3,4,5];
+console.log(arrayFunc(myarray,1));
