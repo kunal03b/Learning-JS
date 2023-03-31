@@ -61,7 +61,7 @@ let arr1 = ["item1", "item2", "item3", "item4","item5","item6"];
 // let newVar2 = arr1[1];
 // console.log(newVar1)
 // console.log(newVar2)
-let [newVar1,,newVar3,...newVar4] = arr1
+let [newVar1,,newVar3,...newVar4] = arr1     //spread operator ...
 console.log(newVar1)
 console.log(newVar3)
 console.log(newVar4)
