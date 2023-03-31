@@ -52,17 +52,29 @@
 // console.log(obj2)
 // console.log()
 
-// Spread operator in Object
-const obj1 = {
-    key1: "value1",
-    key2: "value2",
-};
-const obj2 = {
-    key1: "newValue",
-    key3: "value3",
-    key4: "value4",
-};
+// // Spread operator in Object
+// const obj1 = {
+//     key1: "value1",
+//     key2: "value2",
+// };
+// const obj2 = {
+//     key1: "newValue",
+//     key3: "value3",
+//     key4: "value4",
+// };
 
-const newObj = {...obj1,...obj2}
-// const newObj = {...obj2,...obj1}
-console.log(newObj)
+// const newObj = {...obj1,...obj2}
+// // const newObj = {...obj2,...obj1}
+// console.log(newObj)
+
+// Object Destructuring 
+const personData = {
+    name: "John",
+    age : "19",
+    rollNumber : "1",
+    phoneNo: "830729***",
+    Address: "Haryana"
+}
+let{name:studentName,age:studentAge,rollNumber:studentRollNo,...AdditionalData} = personData;
+console.log(studentName,studentAge,studentRollNo)
+console.log(AdditionalData)
