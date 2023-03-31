@@ -67,14 +67,32 @@
 // // const newObj = {...obj2,...obj1}
 // console.log(newObj)
 
-// Object Destructuring 
-const personData = {
-    name: "John",
-    age : "19",
-    rollNumber : "1",
-    phoneNo: "830729***",
-    Address: "Haryana"
-}
-let{name:studentName,age:studentAge,rollNumber:studentRollNo,...AdditionalData} = personData;
-console.log(studentName,studentAge,studentRollNo)
-console.log(AdditionalData)
+// // Object Destructuring 
+// const personData = {
+//     name: "John",
+//     age : "19",
+//     rollNumber : "1",
+//     phoneNo: "830729***",
+//     Address: "Haryana"
+// }
+// let{name:studentName,age:studentAge,rollNumber:studentRollNo,...AdditionalData} = personData;
+// console.log(studentName,studentAge,studentRollNo)
+// console.log(AdditionalData)
+
+// object inside array
+const StudentData = [
+    {name:"Kunal",age:19,ROllNo:2534},
+    {name:"Nitish",age:19,RollNo:2520},
+    {name:"Aman",age:20,RollNo:2528}
+]
+// console.log(StudentData) 
+for(let Student of StudentData){
+    // console.log(Student)
+    console.log(Student.name)
+} 
+
+// Nested Destructuring
+const[{name: FirstName},user2 , {RollNo:number}] = StudentData
+console.log(FirstName)
+console.log(user2)
+console.log(number)
