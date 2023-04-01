@@ -98,3 +98,15 @@ myarray = prompt("Enter array: ");
 mytarget = prompt("Enter target");
 const ans = findIndex(myarray,mytarget);
 console.log(ans);
+
+
+// sum of all arguments of a function
+var count = 0;
+function ParaSum(...a){
+    for(let i = 0; i < a.length; i++){
+        count = count+a[i];
+    }
+    console.log(count);
+}
+
+ParaSum(1,2,5,7);
