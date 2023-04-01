@@ -91,3 +91,26 @@ const makeArray = (a,b,c,...d) =>{
     console.log("Inside d",d);
 }
 makeArray(1,2,3,4,5,6,7);
+
+// param destructuring
+const persons = {
+    firstName : "John",
+    age: 19
+}
+function getDetails(firstName,age){
+    console.log(firstName)
+    console.log(age)
+} 
+getDetails(persons)
+
+// callback functions---------------------------
+
+function toCall(Num){
+    console.log("Heyy there.. I am coming from called function...");
+    console.log("The value is:",Num);
+}
+function giveCall(call){
+    console.log("Hiii I am calling the function...");
+    call(8);
+}
+giveCall(toCall);
