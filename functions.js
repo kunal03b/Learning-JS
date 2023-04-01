@@ -114,3 +114,13 @@ function giveCall(call){
     call(8);
 }
 giveCall(toCall);
+
+// function calling function---------------------
+function func1(){
+    function func2(){
+        console.log("Hii");
+    }
+    console.log("Hlo")
+}
+const calling = func1();
+calling()
