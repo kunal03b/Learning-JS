@@ -62,3 +62,32 @@ const func1 = () => {
     func12();
 }
 func1()
+
+// --------------------------------------------------------------------
+// Lexical scope
+// let and const are block scope.....var is function scope
+
+// Default parameter
+var myfunction = (a,b) => {
+    if(typeof b=== 'undefined'){
+        b = 1;
+    }
+    return a+b;
+}
+console.log(myfunction(1))
+
+// another way to make parameter default
+function sum(a,b=1){
+    return a+b;
+}
+console.log(sum(3))
+console.log()
+
+// rest parameter---------------------------
+const makeArray = (a,b,c,...d) =>{
+    console.log("Inside a",a);
+    console.log("Inside b",b);
+    console.log("Inside c",c);
+    console.log("Inside d",d);
+}
+makeArray(1,2,3,4,5,6,7);
