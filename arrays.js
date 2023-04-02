@@ -104,12 +104,30 @@
 // const resultArray = students.map(fname)
 // console.log(resultArray)
 
-// filter method
-// program to check no is even or odd
-const numbers = [2,5,97,122,127,922];
-// creating a callback function which must return only boolean values
-const check = function(num){
-    return num%2===0;
-}
-const result = numbers.filter(check);
-console.log(result);
+// // filter method
+// // program to check no is even or odd
+// const numbers = [2,5,97,122,127,922];
+// // creating a callback function which must return only boolean values
+// const check = function(num){
+//     return num%2===0;
+// }
+// const result = numbers.filter(check);
+// console.log(result);
+
+// reduce method
+const nums = [1,2,3,4,5,6,7]
+const sum = nums.reduce((accumulator,currentValue) => {
+    return accumulator + currentValue;
+},0);   // we can pass the initial value of the accumulator here. i.e. 0
+console.log(sum);
+
+// reduce method example
+const Products = [
+    {productID:1,productName:"iPhone14",price:140000},
+    {productID:2,productName:"MacBook",price:190000},
+    {productID:3,productName:"AppleWatch",price:40000}
+]
+const TotalPrice = Products.reduce((sumPrice,currentPrice) =>{
+    return sumPrice + currentPrice.price;
+},0)
+console.log("The total price is:",TotalPrice)
