@@ -80,26 +80,36 @@
 //     console.log(user.firstName,index);
 // })
 
-// map method----------------------------------------
-// in map method callback function is required
-const num = [5,3,7,9];
-// creating callback function
-const cube = function(number){
-    return number * number * number;
-}
-// in map method we have to pass the callback function
-// we can also create the callback function in the map's parameter
-const resultArr = num.map(cube);
-console.log(resultArr);
+// // map method----------------------------------------
+// // in map method callback function is required
+// const num = [5,3,7,9];
+// // creating callback function
+// const cube = function(number){
+//     return number * number * number;
+// }
+// // in map method we have to pass the callback function
+// // we can also create the callback function in the map's parameter
+// const resultArr = num.map(cube);
+// console.log(resultArr);
 
-// map example
-const students = [
-        {firstName: "Kunal",age: 19},
-        {firstName: "Aman", age: 21},
-        {firstName: "Nitish",age:20},
-]
-const fname = function(name){
-    return name.firstName;
+// // map example
+// const students = [
+//         {firstName: "Kunal",age: 19},
+//         {firstName: "Aman", age: 21},
+//         {firstName: "Nitish",age:20},
+// ]
+// const fname = function(name){
+//     return name.firstName;
+// }
+// const resultArray = students.map(fname)
+// console.log(resultArray)
+
+// filter method
+// program to check no is even or odd
+const numbers = [2,5,97,122,127,922];
+// creating a callback function which must return only boolean values
+const check = function(num){
+    return num%2===0;
 }
-const resultArray = students.map(fname)
-console.log(resultArray)
+const result = numbers.filter(check);
+console.log(result);
