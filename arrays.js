@@ -132,21 +132,30 @@
 // },0)
 // console.log("The total price is:",TotalPrice)
 
-// sort method
-const numArr = [1,5,3,9,25,6]
-numArr.sort((a,b)=>{
-    return a-b;
-})
-console.log("The sorted array is:",numArr)
+// // sort method
+// const numArr = [1,5,3,9,25,6]
+// numArr.sort((a,b)=>{
+//     return a-b;
+// })
+// console.log("The sorted array is:",numArr)
 
-// sort method example
-const cart = [
-    {productID: 1, name:"Laptop", price:70000},
-    {productID: 2, name:"Mobile", price:20000},
-    {productID: 3, name:"TV", price:25000},
-    {productID: 4, name:"Refrigerator", price:40000}
+// // sort method example
+// const cart = [
+//     {productID: 1, name:"Laptop", price:70000},
+//     {productID: 2, name:"Mobile", price:20000},
+//     {productID: 3, name:"TV", price:25000},
+//     {productID: 4, name:"Refrigerator", price:40000}
+// ]
+// cart.sort((a,b)=>{
+//     return a.price-b.price;
+// })
+// console.log("Sorted poducts are:",cart)
+
+// find method
+const voterID = [
+    {sNo: 1,voterName: "Kunal"},
+    {sNo : 2,voterName : "Nitish"},
+    {sNo : 3,voterName :"Aman"}
 ]
-cart.sort((a,b)=>{
-    return a.price-b.price;
-})
-console.log("Sorted poducts are:",cart)
+const findVoters = voterID.find((holder) => holder.sNo===2);
+console.log(findVoters)
