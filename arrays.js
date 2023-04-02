@@ -55,13 +55,27 @@
 // console.log()
 
 // Array Destructuring
-console.log("Array Destructuring")
-let arr1 = ["item1", "item2", "item3", "item4","item5","item6"];
-// let newVar1 = arr1[0];
-// let newVar2 = arr1[1];
+// console.log("Array Destructuring")
+// let arr1 = ["item1", "item2", "item3", "item4","item5","item6"];
+// // let newVar1 = arr1[0];
+// // let newVar2 = arr1[1];
+// // console.log(newVar1)
+// // console.log(newVar2)
+// let [newVar1,,newVar3,...newVar4] = arr1     //spread operator ...
 // console.log(newVar1)
-// console.log(newVar2)
-let [newVar1,,newVar3,...newVar4] = arr1     //spread operator ...
-console.log(newVar1)
-console.log(newVar3)
-console.log(newVar4)
+// console.log(newVar3)
+// console.log(newVar4)
+
+// Importtant array methods--------------------------------------------------------------
+// forEach method----------------------------------
+const users = [
+    {firstName: "Kunal",age: 19},
+    {firstName: "Aman", age: 21},
+    {firstName: "Nitish",age:20},
+]
+// users.forEach(function(user){
+//     console.log(user.firstName)
+// })
+users.forEach((user,index)=>{
+    console.log(user.firstName,index);
+})
