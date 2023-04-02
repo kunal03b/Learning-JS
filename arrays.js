@@ -67,15 +67,39 @@
 // console.log(newVar4)
 
 // Importtant array methods--------------------------------------------------------------
-// forEach method----------------------------------
-const users = [
-    {firstName: "Kunal",age: 19},
-    {firstName: "Aman", age: 21},
-    {firstName: "Nitish",age:20},
-]
-// users.forEach(function(user){
-//     console.log(user.firstName)
+// // forEach method----------------------------------
+// const users = [
+//     {firstName: "Kunal",age: 19},
+//     {firstName: "Aman", age: 21},
+//     {firstName: "Nitish",age:20},
+// ]
+// // users.forEach(function(user){
+// //     console.log(user.firstName)
+// // })
+// users.forEach((user,index)=>{
+//     console.log(user.firstName,index);
 // })
-users.forEach((user,index)=>{
-    console.log(user.firstName,index);
-})
+
+// map method----------------------------------------
+// in map method callback function is required
+const num = [5,3,7,9];
+// creating callback function
+const cube = function(number){
+    return number * number * number;
+}
+// in map method we have to pass the callback function
+// we can also create the callback function in the map's parameter
+const resultArr = num.map(cube);
+console.log(resultArr);
+
+// map example
+const students = [
+        {firstName: "Kunal",age: 19},
+        {firstName: "Aman", age: 21},
+        {firstName: "Nitish",age:20},
+]
+const fname = function(name){
+    return name.firstName;
+}
+const resultArray = students.map(fname)
+console.log(resultArray)
