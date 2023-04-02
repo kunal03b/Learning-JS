@@ -172,10 +172,25 @@
 // will check if any of the element is present which satisfies the given condition
 
 
-// fill method
-// fill(value,start,end)
-const newArr = new Array(12).fill(11)
-console.log(newArr)
+// // fill method
+// // fill(value,start,end)
+// const newArr = new Array(12).fill(11)
+// console.log(newArr)
 
-newArr.fill(12,3,9)
-console.log(newArr)
+// newArr.fill(12,3,9)
+// console.log(newArr)
+
+// splice method
+// splice(start,delete,insert)
+const exArr = [1,2,3,4,5]
+// // delete
+// exArr.splice(1,2);
+// console.log(exArr)
+
+// // insert
+// exArr.splice(1,0,"Inserted 1");
+// console.log(exArr)
+
+// delete and insert
+exArr.splice(1,2,"Inserted 1","Inserted 2")
+console.log(exArr)
