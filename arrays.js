@@ -133,19 +133,19 @@
 // console.log("The total price is:",TotalPrice)
 
 // // sort method
-const numArr = [2,34,4,8,10]
+// const numArr = [2,34,4,8,10]
 // numArr.sort((a,b)=>{
 //     return a-b;
 // })
 // console.log("The sorted array is:",numArr)
 
 // // sort method example
-const cart = [
-    {productID: 1, name:"Laptop", price:70000},
-    {productID: 2, name:"Mobile", price:20000},
-    {productID: 3, name:"TV", price:25000},
-    {productID: 4, name:"Refrigerator", price:40000}
-]
+// const cart = [
+//     {productID: 1, name:"Laptop", price:70000},
+//     {productID: 2, name:"Mobile", price:20000},
+//     {productID: 3, name:"TV", price:25000},
+//     {productID: 4, name:"Refrigerator", price:40000}
+// ]
 // cart.sort((a,b)=>{
 //     return a.price-b.price;
 // })
@@ -160,12 +160,22 @@ const cart = [
 // const findVoters = voterID.find((holder) => holder.sNo===2);
 // console.log(findVoters)
 
-// every method
-const everyFunc = numArr.every((no) => no%2===0);
-console.log(everyFunc);
+// // every method
+// const everyFunc = numArr.every((no) => no%2===0);
+// console.log(everyFunc);
 
-// every example
-const everyCart = cart.every((check) => check.price>20000)
-console.log(everyCart);
+// // every example
+// const everyCart = cart.every((check) => check.price>20000)
+// console.log(everyCart);
 
 // some method
+// will check if any of the element is present which satisfies the given condition
+
+
+// fill method
+// fill(value,start,end)
+const newArr = new Array(12).fill(11)
+console.log(newArr)
+
+newArr.fill(12,3,9)
+console.log(newArr)
