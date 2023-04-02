@@ -114,20 +114,39 @@
 // const result = numbers.filter(check);
 // console.log(result);
 
-// reduce method
-const nums = [1,2,3,4,5,6,7]
-const sum = nums.reduce((accumulator,currentValue) => {
-    return accumulator + currentValue;
-},0);   // we can pass the initial value of the accumulator here. i.e. 0
-console.log(sum);
+// // reduce method
+// const nums = [1,2,3,4,5,6,7]
+// const sum = nums.reduce((accumulator,currentValue) => {
+//     return accumulator + currentValue;
+// },0);   // we can pass the initial value of the accumulator here. i.e. 0
+// console.log(sum);
 
-// reduce method example
-const Products = [
-    {productID:1,productName:"iPhone14",price:140000},
-    {productID:2,productName:"MacBook",price:190000},
-    {productID:3,productName:"AppleWatch",price:40000}
+// // reduce method example
+// const Products = [
+//     {productID:1,productName:"iPhone14",price:140000},
+//     {productID:2,productName:"MacBook",price:190000},
+//     {productID:3,productName:"AppleWatch",price:40000}
+// ]
+// const TotalPrice = Products.reduce((sumPrice,currentPrice) =>{
+//     return sumPrice + currentPrice.price;
+// },0)
+// console.log("The total price is:",TotalPrice)
+
+// sort method
+const numArr = [1,5,3,9,25,6]
+numArr.sort((a,b)=>{
+    return a-b;
+})
+console.log("The sorted array is:",numArr)
+
+// sort method example
+const cart = [
+    {productID: 1, name:"Laptop", price:70000},
+    {productID: 2, name:"Mobile", price:20000},
+    {productID: 3, name:"TV", price:25000},
+    {productID: 4, name:"Refrigerator", price:40000}
 ]
-const TotalPrice = Products.reduce((sumPrice,currentPrice) =>{
-    return sumPrice + currentPrice.price;
-},0)
-console.log("The total price is:",TotalPrice)
+cart.sort((a,b)=>{
+    return a.price-b.price;
+})
+console.log("Sorted poducts are:",cart)
