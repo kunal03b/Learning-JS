@@ -21,11 +21,15 @@ console.log("Sharma".toUpperCase());
 
 // -----------------------------------------------------------------------------
 // function expression
-const myfunc = function(num1, num2){
+// const myfunc = function(num1, num2){
+//     return num1 + num2;
+// }
+const myfunc =(num1, num2) => {
     return num1 + num2;
 }
 console.log(myfunc);
 
+// program to find wheather any number is present in the array  and if present then what's the index 
 const arrayFunc = function(array,target){
     for(let i=0; i<array.length; i++){
         if(array[i] === target){
@@ -116,11 +120,14 @@ function giveCall(call){
 giveCall(toCall);
 
 // function calling function---------------------
-function func1(){
-    function func2(){
-        console.log("Hii");
-    }
-    console.log("Hlo")
-}
-const calling = func1();
-calling()
+// function func1(){
+//     function func2(){
+//         console.log("Hii");
+//     }
+//     console.log("Hlo")
+// }
+// const calling = func1();
+// calling()
+
+// const num = numbers.Map();
+// console.log(number)
